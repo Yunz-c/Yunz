@@ -1,0 +1,91 @@
+<view class="container">
+
+  <view class="address">
+    <text style="display: flex;align-items: center;">收件地址：</text>
+    <text bindtap="selectAddress">{{ address ? address : '选择地址 >' }}</text>
+  </view>
+  <!-- <view class="address">
+    <text>快递商家：</text>
+    <text bindtap="selectBusiness">{{ business ? business : '请选择快递点 >' }}</text>
+  </view> -->
+  <view class="qjm">
+    <view class="address3">
+      <text>取件码：</text>
+    </view>
+    <!-- 输入取件码 -->
+    <view class="getCode">
+      <!-- <textarea class="content" maxlength="12" placeholder="输入取件码,格式：“xxx-xx-xxxx”" value="{{ expressCode }}" bindinput="getExpressCode">
+    </textarea> -->
+      <!-- 尝试代码 -->
+      <input maxlength="3" type="number" style="border: 0rpx solid #a1a1a1;border-radius: 13rpx;width: 140rpx;height: 60rpx;" value="{{firstPart}}" bindinput="onFirstPartInput" />
+      <view>-</view>
+      <input maxlength="2" type="number" style="border: 0rpx solid #a1a1a1;border-radius: 13rpx;width: 140rpx;height: 60rpx;" value="{{secondPart}}" bindinput="onSecondPartInput" />
+      <view>-</view>
+      <input maxlength="4" type="number" style="border: 0rpx solid #a1a1a1;border-radius: 13rpx;width: 140rpx;height: 60rpx;" value="{{thirdPart}}" bindinput="onThirdPartInput" />
+      <view class="type">{{typeNowlist}} </view>
+    </view>
+
+    <!-- 添加多条取件码的按钮 -->
+    <!-- <view>
+      <button size="mini" bindtap="addpkg" style="background-color:#7853B2;color: #fff;margin: auto;font-size: 34rpx;margin-left: 83%;">+</button>
+    </view> -->
+  </view>
+
+  <view class="address">
+    <text>备注：</text>
+    <input type="text" maxlength="17" placeholder="根据需要填写" value="{{ remark }}" bindinput="getRemark" style="font-size:24rpx;height: 60rpx;"></input>
+  </view>
+  <!-- <view class="address">
+    <text>更多选择</text>
+    <text style="color: #990f00;width: 100rpx;" bindtap="showMore" wx:if="{{ !showMore }}">展开</text>
+    <text style="color: #990f00;width: 100rpx;" bindtap="showMore" wx:else>收起</text>
+  </view>
+  <view class="show" wx:if="{{ showMore }}">
+    <view class="container-m">
+      <text>期望送达：</text>
+
+      <picker bindchange="bindArriveChange" value="{{ arriveIndex }}" range="{{ arriveArray }}">
+        <text class="lost">
+          {{arriveArray[arriveIndex]}} >
+        </text>
+      </picker>
+    </view>
+    <view class="container-m">
+      <text>性别限制：</text>
+
+      <picker bindchange="bindGenderChange" value="{{ genderIndex }}" range="{{ genderArray }}" >
+        <text class="lost">
+          {{genderArray[genderIndex]}} >
+        </text>
+      </picker>
+    </view> -->
+  <!--<view class="address showWidth">
+      <text>快递数量：</text>
+      <text>1个 ></text> 
+      <picker bindchange="bindExpressNumChange" value="{{ numIndex }}" range="{{ numArray }}">
+        <text style="color: #a1a1a1;">
+          {{ numArray[numIndex] }}个 >
+        </text>
+      </picker>
+    </view>-->
+  <!-- <view class="address showWidth">
+      <text>加急打赏：</text>
+      <switch bindchange="handleChangeReward"></switch>
+    </view>
+    <view class="address showWidth" wx:if="{{ isReward }}">
+      <text>额外赏金：</text>
+      <input type="text" placeholder="输入赏金" value="{{ addMoney }}" bindinput="getAddMoeny" />
+    </view>
+  </view>-->
+  <view class="bottom_tips">
+    <text>需支付</text>
+    <text>{{totalPrice}} 元</text>
+  </view>
+
+  <button class="submit" bindtap="submit">提交订单</button>
+  <view class="statement">
+    <text>免责声明</text>
+    <text>用户条款&隐私策略</text>
+  </view>
+</view>
+<view class="container02"></view>

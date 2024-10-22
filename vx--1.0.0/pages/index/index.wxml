@@ -1,0 +1,30 @@
+<!--轮播图-->
+<swiper indicator-dots="true" indicator-color="gray" indicator-active-color="white" circular="true" autoplay="true" class="banner_body">
+  <swiper-item wx:for="{{ banner }}" wx:key="index" class="banner_item">
+    <image src="{{ item }}" mode="aspectFill"></image>
+  </swiper-item>
+</swiper>
+
+<!--业务功能-->
+<view class="container">
+  <view class="body" wx:for="{{ indexConfig }}" wx:key="index" data-url="{{ item.url }}" bindtap="toDetail">
+    <view class="circleBorder">
+      <view class="icon">
+        <image src="{{ item.icon }}"></image>
+      </view>
+    </view>
+    <text class="text">{{ item.text }}</text>
+  </view>
+</view>
+
+<!--公告-->
+<view class="notice">
+  <view class="gg"><image src="../../images/notice.png" mode="widthFix" class="img"></image><text style="margin-left: 20rpx;">公告：</text></view>
+  <view class="gg">本款小程序用于校园代取快递服务。</view>
+  <view class="gg">计费标准：</view>
+  <view class="gg">小件-2元；中件-4元；大件-6元</view>
+  <view class="gg">配送时间：</view>
+  <view class="gg">工作日（中午 12:00~14:30; 下午 18:00~19:30）</view>
+</view>
+
+<view style="width: 100%;height: 200rpx;">  </view>

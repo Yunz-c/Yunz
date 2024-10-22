@@ -1,0 +1,44 @@
+<view class="body">
+  <image class="noneImg" src="../../../images/none.png" wx:if="{{ address.length === 0}}"></image>
+  <view class="noneData" wx:if="{{ address.length === 0 }}">
+    -- 暂无数据 --
+  </view>
+
+
+  <view class="address" wx:for="{{ address }}" wx:key="index" data-index="{{ index }}" bindtap="selectAddress">
+    <text>地  址：<text style="color: #7853B2;font-size: 28rpx;">{{ item.build }}-{{ item.houseNumber }}</text></text>
+    <text>姓  名：<text style="color: #7853B2;font-size: 28rpx;">{{ item.name }}</text></text>
+    <text>电  话：<text style="color: #7853B2;font-size: 28rpx;">{{ item.phone }}</text></text>
+    <view class="address_bottom">
+
+      <!--默认地址变体按钮功能-->
+      <view class="bottom_left">
+        <!-- <image class="iconSize" src="../../../images/success.png"></image>
+        <text class="ml">默认地址</text> -->
+      </view>
+
+
+      <view class="bottom_right">
+
+        <view class="edit" catchtap="edit" data-index="{{ index }}">
+          <image class="iconSize" src="../../../images/edit.png"></image>
+          <text class="ml">编辑</text>
+        </view>
+
+        <view class="delete" catchtap="delete" data-index="{{ index }}">
+          <image class="iconSize" src="../../../images/delete.png"></image>
+          <text class="ml">删除</text>
+        </view>
+
+      </view>
+    </view>
+  </view>
+
+
+
+  <view class="showAll">
+    ————— <text>已显示全部</text> —————
+  </view>
+
+  <button class="addBtn" bindtap="addAddress">添加地址</button>
+</view>

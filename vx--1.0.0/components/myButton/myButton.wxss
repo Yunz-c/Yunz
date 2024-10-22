@@ -1,0 +1,13 @@
+
+.submitBtn {
+  width: 600rpx !important;
+  background-color: #7853B2;
+  padding: 20rpx 0;
+  font-weight: 400;
+  border-radius: 13rpx;
+  margin: 0 auto;
+  color: #fff;
+  margin: 60rpx 0 40rpx;
+  border: 0.5rpx solid #7853B2;
+  box-shadow:1rpx 1rpx 7rpx #7853B2;
+}

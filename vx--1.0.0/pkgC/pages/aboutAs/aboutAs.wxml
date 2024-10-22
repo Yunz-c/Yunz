@@ -1,0 +1,22 @@
+<view class="logo">
+    <image src="../../../images/banner1.jpg" mode="widthFix"></image>
+</view>
+
+<view class="desc">
+    <text class="text-i">这是一款专用于大学校园的代取快递小程序。</text>
+    <text class="text-i1">我们致力于为高校学子打造最便捷的校园生活服务平台。在这里，你既可以作为发布者，发布代取快递的需求；也可以成为接收者，接收任务并完成他人的代取快递需求。当发布者和接收者共同协作，校园生活将更加轻松高效。我们秉持着互利共存的理念，期待为你的大学生活增添更多便利。</text>
+</view>
+
+<view class="text">联系我们</view>
+
+<view class="cell">
+    如果使用本款小程序出现问题，请与我们反馈，感谢您的支持！
+</view>
+
+<view class="cell">
+    微信公众号 敬请期待！
+</view>
+
+<view class="cell">
+    川影新媒体 数技开发团队
+</view>

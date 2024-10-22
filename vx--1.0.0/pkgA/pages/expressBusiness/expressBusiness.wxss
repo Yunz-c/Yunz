@@ -1,0 +1,34 @@
+.scroll_view {
+  white-space: nowrap;
+}
+
+.tab_item {
+  display: inline-block;
+  padding: 10px;
+}
+
+.select {
+  background-color: #ddd;
+}
+
+.item {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.popup {
+  position: fixed;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 50%;
+  background-color: white;
+
+}
+
+.title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}

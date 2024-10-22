@@ -1,0 +1,241 @@
+.info {
+  width: 85%;
+  background-color: #ffffff;
+  display: flex;
+  border-radius: 13rpx;
+  margin: 25rpx auto;
+  padding: 50rpx 25rpx;
+  align-items: center;
+  box-shadow: 1rpx 1rpx 13rpx #7853B2;
+}
+
+.info .avatarxiu1 {
+  margin-left: 5%;
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 13rpx;
+  border:0.1rpx solid #d4c9d4;
+}
+
+.info .btn {
+  background-color: #7853B2;
+  border-radius: 13rpx;
+  width: 300rpx;
+  color: rgb(255, 255, 255);
+}
+
+.info .name {
+  display: flex;
+  flex-direction: column;
+  color: rgb(37, 0, 58);
+  font-size: 30rpx;
+  margin-bottom: 60rpx;
+  margin-left: 20rpx;
+  font-weight: bold;
+}
+
+.info .name text:nth-child(2) {
+  margin-top: 15rpx;
+}
+
+
+
+.info .into {
+  color: rgb(37, 0, 58);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150rpx;
+  height: 50rpx;
+  margin-left: 70rpx;
+  margin-top: 50rpx;
+  padding: 5rpx;
+  border: 1rpx solid #a1a1a1;
+  border-radius: 13rpx;
+}
+
+.cell {
+  display: flex;
+  width: 90% !important;
+  background-color: #fff;
+  margin: 20rpx auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx 25rpx;
+  margin-top: 20rpx;
+  font-weight: 500;
+}
+
+.cell .cellLeft {
+  display: flex;
+  align-items: center;
+}
+
+.cell .cellLeft image {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.cell .cellLeft text {
+  margin-left: 30rpx;
+}
+
+.cell .cellRight {
+  color: #c1c1c1;
+}
+
+.customerService .tips {
+  background-color: #7853B2;
+  width: 85%;
+  padding: 20rpx 25rpx;
+  color: #fff;
+  text-align: center;
+  margin: 20rpx auto;
+  font-size: 24rpx;
+  border-radius: 13rpx;
+  height: 30rpx;
+}
+
+.mt {
+  margin-top: 25rpx;
+}
+
+.version {
+  color: #a1a1a1;
+  width: 100%;
+  text-align: center;
+}
+
+.kkk {
+  width: 100%;
+  height: 70rpx;
+  border: 0rpx solid #fff;
+}
+
+
+
+
+/* 授权弹窗 */
+.userInfo_tank_bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  background: #000;
+  z-index: 666;
+}
+
+.userInfo_tank {
+  position: fixed;
+  bottom: 0;
+  background-color: white;
+  width: 100%;
+  border-radius: 30rpx 30rpx 0 0;
+  padding: 30rpx;
+  box-sizing: border-box;
+  z-index: 999999;
+}
+
+.transfromjoin {
+  transition: all 0.3s;
+  margin-bottom: -700;
+}
+
+.transfromout {
+  transition: all 0.3s;
+  margin-bottom: -1400rpx;
+}
+
+.avatar_url {
+  width: 82rpx;
+  height: 82rpx;
+  margin-right: 20rpx;
+  border-radius: 13rpx;
+}
+
+.tank_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  height: 100rpx;
+}
+
+.tank_content text {
+  color: #787376;
+}
+
+.tank_content input {
+  width: 80%;
+  text-align: right;
+}
+
+.tank_title {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 30rpx;
+  font-weight: 700;
+}
+
+.confirm_button {
+  display: flex;
+  margin: 50rpx 0;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+}
+
+.confirm_button view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+/* .pos_photo {
+  position: absolute;
+  bottom: 0;
+  right: -10rpx;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  width: 40rpx;
+  height: 40rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.pos_photo text {
+  font-size: 25rpx !important;
+  color: #fff;
+}
+
+.avatar {
+  position: relative;
+}
+
+.confirm_button view button {
+  width: 90%;
+}
+
+.default_button {
+  width: none !important;
+  margin: 0 !important;
+  padding: 10rpx 20rpx !important;
+  width: 260rpx !important;
+  font-weight: 600 !important;
+  font-size: 32rpx !important;
+}
+
+.avatar_button {
+  padding: 0 !important;
+  margin: 0 !important;
+  margin-right: 20rpx !important;
+  width: 82rpx !important;
+  height: 82rpx !important;
+  border: 0.1rpx solid #a1a1a1;
+  border-radius: 13rpx !important;
+  font-size: 32rpx !important;
+  overflow: visible !important;
+}

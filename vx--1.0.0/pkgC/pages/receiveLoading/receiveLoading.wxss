@@ -1,0 +1,25 @@
+page {
+  background-color: #fff;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30rpx;
+}
+
+.body image {
+  width: 100rpx;
+  height: 100rpx;
+  margin: 30rpx auto;
+}
+
+.body .btn {
+  background-color: #7853B2;
+  border: 1rpx solid #a1a1a1;
+  color: #fff;
+  font-weight: 400;
+  margin-top: 45rpx;
+}

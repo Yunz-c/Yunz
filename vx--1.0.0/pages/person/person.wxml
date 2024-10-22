@@ -1,0 +1,99 @@
+<view class="info">
+  <image class="avatarxiu1" wx:if="{{!userInfo.avatarUrl}}" bindtap="closeTank" src="../../images/touxiang.png"></image>
+  <block>
+    <button wx:if="{{!userInfo.avatarUrl}}" bindtap="closeTank" class="btn">登 录</button>
+    <!-- open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber"-->
+  </block>    
+
+<image wx:if="{{userInfo.avatarUrl}}" class="avatarxiu1" src="{{userInfo.avatarUrl}}" bind:tap="updateInfo"></image>
+
+  <view class="name" wx:if="{{userInfo.avatarUrl}}">
+    <text>{{ userInfo.nickName }}</text>
+  </view>
+  <text wx:if="{{userInfo.avatarUrl}}" class="into" bind:tap="updateInfo">编辑资料</text>
+</view>
+
+
+<button class="cell mt" bindtap="applyOrder">
+  <view class="cellLeft">
+    <image src="../../images/apply.png"></image>
+    <text>申请接单</text>
+  </view>
+  <text class="cellRight">></text>
+</button>
+
+<button class="cell mt" bindtap="orderReceiver" wx:if="{{admin}}">
+  <view class="cellLeft">
+    <image src="../../images/check.png"></image>
+    <text>审核接单申请</text>
+  </view>
+  <text class="cellRight">></text>
+</button>
+
+<view class="customerService mt">
+  <view class="tips">
+    提示：遇到问题可以添加联系微信客服
+  </view>
+
+  <button class="cell" bindtap="getWXCustomer">
+    <view class="cellLeft">
+      <image src="../../images/wx.png"></image>
+      <text>添加客服微信</text>
+    </view>
+    <text class="cellRight">></text>
+  </button>
+
+  <button class="cell" bindtap="toAbout">
+    <view class="cellLeft">
+      <image src="../../images/about.png"></image>
+      <text>关于我们</text>
+    </view>
+    <text class="cellRight">></text>
+  </button>
+
+  <button class="cell" open-type="contact">
+    <view class="cellLeft">
+      <image src="../../images/advice.png"></image>
+      <text>反馈建议</text>
+    </view>
+    <text class="cellRight">></text>
+  </button>
+
+  <button class="cell mt" bindtap="tuichu">
+  <text style="color: red;align-items: center;margin: auto;">退出登录</text>
+</button>
+</view>
+<view class="kkk"></view>
+<view class="version mt">当前版本: 1.0.0</view>
+
+
+<!-- 头像昵称基本信息弹框 -->
+<view>
+    <view class="userInfo_tank_bg" bindtap="closeTank" wx:if="{{userInfo_tank}}"></view>
+    <view class="userInfo_tank {{userInfo_tank?'transfromjoin':'transfromout'}}">
+        <view class="tank_title">
+            <text>申请获取您的头像、昵称</text>
+        </view>
+        <view class="tank_content">
+            <text>头像：</text>
+            <button class="avatar_button" open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar">
+                <image class="avatar_url" src="{{avatarUrl}}"></image>
+                <!-- <view class="pos_photo">
+                    <text class="iconfont icon-paizhao"></text>
+                </view> -->
+            </button>
+        </view>
+        <view class="tank_content">
+            <text>昵称：</text>
+            <input form-type='submit' bindblur="getNickName" placeholder="请输入昵称" type="nickname" />
+        </view>
+        <view class="confirm_button">
+            <view>
+                <button bindtap="closeTank">拒绝</button>
+            </view>
+            <view>
+                <button bindtap="submit" type="primary">允许</button>
+            </view>
+        </view>
+    </view>
+</view>

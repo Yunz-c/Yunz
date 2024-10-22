@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "my-button": "/components/myButton/myButton"
+
+  },
+  "navigationBarTitleText": "申请接单"
+}

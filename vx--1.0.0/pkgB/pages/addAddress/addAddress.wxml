@@ -1,0 +1,48 @@
+<view class="body">
+  <view class="body_item">
+    <view class="left">
+      <image src="../../../images/build.png"></image>
+      <text>选择楼栋</text>
+    </view>
+    <view class="right" bindtap="selectBuild" style="font-size: 24rpx;">{{ build ? build : '点击选择' }} ></view>
+  </view>
+  <!--宿舍号-->
+  <view class="body_item">
+    <view class="left">
+      <image src="../../../images/address.png"></image>
+      <text>详细地址</text>
+    </view>
+    <view class="right">
+      <input type="text" maxlength="10" placeholder="寝室/房间号" style="font-size: 24rpx;" bindinput="getHouseNumber" value="{{ houseNumber }}" />
+    </view>
+  </view>
+  <!--姓名-->
+  <view class="body_item">
+    <view class="left">
+      <image src="../../../images/name.png"></image>
+      <text>收件姓名</text>
+    </view>
+    <view class="right">
+      <input type="text" maxlength="5" bindinput="getName" placeholder="真实姓名" style="font-size: 24rpx;" value="{{ name }}" />
+    </view>
+  </view>
+  <!--电话--> 
+  <view class="body_item">
+    <view class="left">
+      <image src="../../../images/phone.jpg"></image>
+      <text>收件电话</text>
+    </view>
+    <view class="right">
+      <input type="number" bindinput="getPhone" maxlength="11" value="{{ phone }}" />
+    </view>
+  </view>
+<!--默认状态，变体按钮-->
+  <view class="defalut">
+    <!-- <text  style="font-size: 24rpx;">默认地址</text>
+    <switch checked="{{ defalutAddress }}" bindchange="handleChangeSwitch"></switch> -->
+  </view>
+<!--保存地址按钮-->
+  <button class="saveBtn" bindtap="saveAddress">保存地址</button>
+
+  <text class="showTip">地址说明</text>
+</view>

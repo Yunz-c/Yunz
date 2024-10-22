@@ -1,0 +1,73 @@
+<scroll-view scroll-x class="scroll_view">
+    <view class="tab">
+        <view class="tab_item {{ tabNow === index ? 'select' : '' }}" wx:for="{{ tabList }}" data-id="{{ index }}" wx:key="index" bindtap="selectTab">
+            {{ item }}
+        </view>
+    </view>
+</scroll-view>
+
+
+
+
+<view wx:if="{{ tabNow === 0 }}" class="dbody">
+<view class="body" wx:for="{{ receiveList }}" wx:key="index">
+  <view class="yihang">
+<view class="zhuangtai">审核状态：{{item.state}}</view>
+</view>
+<view class="erhang">
+  <view class="name">姓名：{{ item.name }}</view>
+  <view class="userID">电话：{{ item.userID }}</view>
+</view>
+<view class="sanhang">
+  <text>证件照：</text>
+  <image src="{{ item.userIDImg }}" mode="aspectFit"></image>
+</view>
+  <view class="btn">
+    <button type="warn" size="mini" data-item="{{ item }}" data-name="审核不通过" bindtap="toExamine">审核不通过</button>
+    <button type="primary" size="mini" data-item="{{ item }}" data-name="审核通过" bindtap="toExamine">审核通过</button>
+  </view>
+</view>
+</view>
+
+
+
+<view wx:if="{{ tabNow === 1 }}" class="dbody">
+<view class="body" wx:for="{{ receiveListbtg }}" wx:key="index">
+  <view class="yihang">
+<view class="zhuangtai">审核状态：{{item.state}}</view>
+</view>
+<view class="erhang">
+  <view class="name">姓名：{{ item.name }}</view>
+  <view class="userID">电话：{{ item.userID }}</view>
+</view>
+<view class="sanhang">
+  <text>证件照：</text>
+  <image src="{{ item.userIDImg }}" mode="aspectFit"></image>
+</view>
+  <view class="btn">
+    <button type="warn" size="mini" data-item="{{ item }}" data-name="审核不通过" bindtap="toExamine">审核不通过</button>
+    <button type="primary" size="mini" data-item="{{ item }}" data-name="审核通过" bindtap="toExamine">审核通过</button>
+  </view>
+</view>
+</view>
+
+
+
+
+
+
+<view wx:if="{{ tabNow === 2 }}" class="dbody">
+<view class="body" wx:for="{{ receiveListtg }}" wx:key="index">
+<view class="yihang">
+<view class="zhuangtai">审核状态：{{item.state}}</view>
+</view>
+<view class="erhang">
+  <view class="name">姓名：{{ item.name }}</view>
+  <view class="userID">电话：{{ item.userID }}</view>
+</view>
+<view class="sanhang">
+  <text>证件照：</text>
+  <image src="{{ item.userIDImg }}" mode="aspectFit"></image>
+</view>
+</view>
+</view>

@@ -1,0 +1,108 @@
+.scroll_view {
+  background-color: #fff;
+  white-space: nowrap;
+}
+
+.tab {
+  display: flex;
+  text-align: center;
+}
+
+.tab .tab_item {
+  height: 90rpx;
+  display: inline-block;
+  line-height: 90rpx;
+  margin: 0 10rpx;
+  padding: 0 20rpx;
+  flex: 1;
+}
+
+.select {
+  color: #7853B2;
+  border-bottom: 4rpx solid #7853B2;
+}
+
+
+
+
+
+
+
+
+
+.body {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fff;
+  margin: 0 auto;
+  margin-top: 30rpx;
+  width: 85%;
+  border-radius: 13rpx;
+  padding: 25rpx 25rpx;
+  box-shadow: 1rpx 1rpx 13rpx #a1a1a1;
+}
+
+.yihang {
+  width: 100%;
+  margin: 5rpx auto;
+}
+
+.erhang {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5rpx auto;
+
+}
+
+.sanhang {
+  font-size: 28rpx;
+  font-weight: 700;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 5rpx auto;
+  border: 1rpx solid #a1a1a1;
+  padding: 20rpx 20rpx;
+  border-radius: 13rpx;
+}
+
+.zhuangtai {
+  font-weight: bold;
+  color: #7853B2;
+
+
+}
+
+.name {
+  font-weight: 700;
+  font-size: 28rpx;
+  margin: 10rpx auto;
+  width: 100%;
+
+  padding-left: 20rpx;
+}
+
+.userID {
+  font-weight: 700;
+  font-size: 28rpx;
+  margin: 10rpx auto;
+  width: 100%;
+
+  padding-left: 20rpx;
+}
+
+.body image {
+  width: 70%;
+  height: 210rpx;
+  margin: 7rpx auto;
+}
+
+.body .btn {
+  margin-left: auto;
+  margin-top: 20rpx;
+}
+
+.body .btn button:last-child {
+  margin-left: 30rpx;
+}

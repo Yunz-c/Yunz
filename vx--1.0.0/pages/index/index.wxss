@@ -1,0 +1,99 @@
+.banner_body, .banner_item, .banner_item image {
+  height: 350rpx;
+  width: 100%;
+}
+
+.notice {
+  width: 85%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  padding: 7rpx 25rpx;
+  margin: 20rpx auto; /* 水平居中，顶部距离 20rpx */
+  border-radius: 13rpx;
+  box-shadow: 0rpx 1rpx 13rpx #a1a1a1;
+}
+.gg{
+  font-size: 28rpx;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 10rpx auto;
+  margin-left: 20rpx;
+  text-align: left;
+  
+}
+
+.notice image {
+  width: 52rpx;
+  height: 52rpx;
+}
+
+.notice text {
+  font-size: 28rpx;
+  overflow: hidden;
+  font-weight: bold;
+  color: #7853B2;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-left: 30rpx;
+}
+
+.container {
+  margin-top: 20rpx;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30rpx auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .body {
+  width: 85%;
+  padding: 7rpx 25rpx;
+  height: 360rpx;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 13rpx;
+  box-shadow: 0rpx 1rpx 13rpx #a1a1a1;
+}
+.container .body .circleBorder {
+  width: 160rpx;
+  height: 160rpx;
+  position: absolute;
+  top: 50rpx;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow:0rpx 1rpx 13rpx  #7853B2;
+}
+
+.container .body .circleBorder .icon {
+  width: 110rpx;
+  height: 110rpx;
+  background-color: #7853B2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50rpx;
+}
+.container .body .circleBorder .icon image {
+
+  width: 60rpx;
+  height: 60rpx;
+}
+.container .body .text {
+  margin-top: 150rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+  color:#7853B2;
+}

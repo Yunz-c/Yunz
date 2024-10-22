@@ -1,0 +1,37 @@
+<view class="body">
+    <view class="avatar">
+        <image src="{{ userInfo.avatarUrl }}"></image>
+    </view>
+
+    <view class="item">    <!--填写姓名-->
+        <text>姓名：</text>
+        <input type="text" maxlength="5" value="{{ name }}" bindinput="getName" />
+    </view>
+    <view class="item">  <!--填写证件号-->
+        <text>手机号：</text>
+        <input type="number" maxlength="11" placeholder="" style="font-size:24rpx;" value="{{ userID }}" bindinput="getUserID" />
+    </view>
+    <view class="uploadImg">  <!--上传证件照-->
+        <text>上传证件正面照：</text>
+        <view class="upload" bindtap="uploadImg">
+            <text wx:if="{{ !userIDImg }}"> + </text>
+            <image wx:else src="{{ userIDImg }}" mode="aspectFill"></image>
+        </view>
+    </view>
+
+    <view class="tips" bindtap="showTips">
+        申请接单常见问题说明
+    </view>
+
+    <!-- <view class="tips mt" bindtap="getAdminWX"> 
+        点击复制管理员微信进行加急审核
+    </view> -->
+    <view class="item" bindtap="toAgreement">
+        <view class="left">
+            <image src="../../../images/order.png"></image>
+            <text>电子协议</text>
+        </view>
+        <view class="right"> > </view>
+    </view>
+    <my-button text="提交申请" bindtap="submit"></my-button>
+</view>
